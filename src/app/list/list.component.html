@@ -1,0 +1,7 @@
+<h3>List of Heroes</h3>
+<button class="btn btn-sm" routerLink="/list/create">Create</button>
+<ul *ngFor="let hero of heroes">
+  <li>{{hero.id}} {{hero.name}}</li>
+</ul>
+<p *ngIf="heroes.length > 3">There are many heroes!</p>
+<router-outlet></router-outlet>
